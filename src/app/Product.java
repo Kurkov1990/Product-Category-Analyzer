@@ -29,7 +29,7 @@ public class Product {
         return "Product{" +
                 "name='" + name + '\'' +
                 ", category='" + category + '\'' +
-                ", price=" + price + "$"+
+                ", price=" + price + "$" +
                 '}';
     }
 }

@@ -9,7 +9,7 @@ public class DataHandler {
 
     DataRepository dataRepository = new DataRepository();
 
-    public void groupByCategory () {
+    public void groupByCategory() {
         Map<String, List<Product>> productsByCategory = dataRepository.getData().stream()
                 .collect(Collectors.groupingBy(Product::getCategory));
 
@@ -41,4 +41,5 @@ public class DataHandler {
                 .orElse("No categories available");
 
         System.out.println("\nCategory with the highest average price: " + highestAvgPriceCategory);
-}}
+    }
+}
