@@ -7,7 +7,7 @@ import java.util.List;
 public class DataRepository {
 
     public List<Product> getData() {
-        List<Product> products = Arrays.asList(
+        return Arrays.asList(
                 new Product("MacBook", "Electronics", 1500.00),
                 new Product("iPhone", "Mobile", 1000.00),
                 new Product("Samsung S24", "Mobile", 700.00),
@@ -18,7 +18,6 @@ public class DataRepository {
                 new Product("Chair", "Furniture", 50.00),
                 new Product("Table", "Furniture", 150.00)
         );
-        return products;
     }
 
 }
